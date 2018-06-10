@@ -1,0 +1,94 @@
+.background { 
+    height: 51.07rem;
+    background: url(../images/tjwork.png) no-repeat center;
+    background-size: cover; 
+ }
+ .photo {
+    position: absolute;
+    top: 6.2rem;
+    width: 100%;
+ }
+.photo-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto;
+    /*background-image: url(../images/introduce.png);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.job, .award {
+    font-size: .28rem;
+    color: #544342;
+    text-align: center;
+}
+.job {
+    margin-top: .76rem;
+    margin-bottom: .1rem;
+}
+.job span {
+    display: inline-block;
+    margin: 0 10px;
+}
+.info {
+    position: absolute;
+    top: 12.2rem;
+    width: 10.8rem;
+    left: 50%;
+    margin-left: -5.4rem;
+}
+.info ul {
+    margin: 0 .5rem;
+}
+.one {
+    margin: .76rem 0 .3rem 0;
+}
+.post {
+    font-size: .3rem;
+    font-weight: bold;
+    color: #544342;
+}
+.salary {
+    font-size: .3rem;
+    font-weight: bold;
+    color: #ff824b;
+}
+.two {
+    margin-bottom: .4rem;
+}
+.two div {
+    font-size: .24rem;
+    color: #bab0a9;
+}
+.company {
+    font-size: .24rem;
+    color: #9e9488;
+}
+.year {
+    line-height: 1;
+    position: relative;
+    top: 3px;
+    padding-left: .26rem;
+    padding-right: .24rem;
+    border-left: 1px solid #e4eef5;
+    border-right: 1px solid #e4eef5;
+}
+.area {
+  margin-right: .204rem;
+}
+.education {
+    margin-left: .24rem;
+}
+.three {
+  line-height: .6rem;
+}
+.logo {
+    width: .6rem;
+    height: .6rem;
+    margin-right: .2rem;
+    /*background-image: url(../images/introduce.png);*/
+    background-position: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

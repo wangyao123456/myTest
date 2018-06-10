@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>推荐工作</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/recommendwork.css">
+  <script>
+    //rem换算
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = (clientWidth / 12.42) + 'px';
+          };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+     })(document, window);
+  </script>
+</head>
+
+<body>
+  <div class="background">
+      <!-- 分享人信息 -->
+      <div class="photo">
+        <div class="photo-img"></div>
+        <div class="job">好友<span class="name"></span>给你推荐热门岗位啦</div>
+        <div class="award">入职后，即可得到奖励哦~</div>
+      </div>
+      <!-- 分享的职位 -->
+      <div class="info">
+          <ul>
+            <li class="clearfix one">
+              <div class="fl post"></div>
+              <div class="fr salary"></div>
+            </li>
+            <li class="clearfix two">
+              <div class="fl area"></div>
+              <div class="fl year"></div>
+              <div class="fl education"></div>
+              <div class="fr time"></div>
+            </li>
+            <li class="clearfix three">
+               <div class="fl logo"></div>
+               <div class="fl company"></div>
+            </li>
+          </ul>
+      </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../js/util.js"></script>
+  <script src="../js/recommendwork.js"></script>
+</body>
+
+</html>

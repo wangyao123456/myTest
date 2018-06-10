@@ -1,0 +1,58 @@
+.container {
+    background-color: #fff;
+}
+
+.register_wrap {
+    margin: 45px 25px 0;
+}
+
+.group {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+
+input[type='tel'],
+input[type="number"],
+.btn-submit {
+    width: 100%;
+    height: 100%;
+    color: #544342;
+    font-size: 14px;
+    padding: 0 20px;
+    border: 1px solid #8c7b79;
+    border-radius: 20px;
+}
+input::-webkit-input-placeholder {
+    color: #dcd2d0;
+}
+.verify {
+    position: absolute;
+    top: 5px;
+    display: inline-block;
+    right: 10px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #ec5151;
+}
+
+.stub::after {
+    content: '';
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    top: 12px;
+    right: 110px;
+    background-color: #ebe1e0;
+}
+
+.btn-submit {
+    font-size: 14px;
+    color: #fff;
+    background-color: #ec4e2d;
+    border: none;
+}

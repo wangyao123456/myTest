@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>高薪工作</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <style>
+     .bottom {
+         position: relative;
+     }
+     .register {
+        position: absolute;
+        display: block;
+        bottom: 33%;
+        width: 30%;
+        height: 36%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+     }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="../images/gxwork.png" alt="">
+    <div class="bottom">
+      <img src="../images/gxbottom.png" alt="">
+      <a href="javascript:;" class="register"></a>
+    </div>
+  </div>
+  <script src=../js/util.js></script>
+  <script>
+      var oRegister = document.querySelector('.register');
+      var inviteCode = getUrlParam('inviteCode');
+      oRegister.setAttribute('href', './register.html?inviteCode=' + inviteCode);
+  </script>
+</body>
+
+</html>

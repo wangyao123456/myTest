@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>收藏</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <!-- <link rel="stylesheet" href="../icon/iconfont.css"> -->
+  <link rel="stylesheet" href="../css/success.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class='notice'>
+      <p>
+        <i class='iconfont icon-notice'></i>
+        <span>岗位已经替你收藏，您可登陆小程序或APP后，在个人中心-职位收藏中查看。</span>
+      </p>
+    </div>
+    <div class='app' style='margin: 40px 20px'>
+      <img src="../images/app.png" alt="">
+      <div class='download'>
+        <a href="javascript:;" id="download">点击下载蜗牛职信APP</a>
+      </div>
+    </div>
+    <div class="wait">
+      <div class="wait-item">敬请期待！</div>
+    </div>
+  </div>
+  <script>
+      var oDownLoad = document.querySelector('#download');
+      var oWait = document.querySelector('.wait');
+      oDownLoad.onclick = function () {
+        oWait.style.display = 'block';
+        setTimeout(function () {
+           oWait.style.display = 'none';
+        }, 2000)
+      };
+  </script>
+</body>
+
+</html>
